@@ -1,4 +1,4 @@
-# MUY FÁCIL
+# VERY EASY
 
 ## 1  
 
@@ -42,11 +42,11 @@ public class Program {
 }
 ```
 
-### Estimación
-5 minutos
+### Estimation
+5 minutes
 
-### Duración Real
-1 minuto
+### Actual duration
+1 minute
 
 ## 2  
 
@@ -96,11 +96,11 @@ public class Program {
 }
 ```
 
-### Estimación
-5 minutos
+### Estimation
+5 minutes
 
-### Duración Real
-32 segundos
+### Actual duration
+1 minute
 
 ## 3  
 
@@ -148,13 +148,13 @@ public class Program {
 }
 ```
 
-### Estimación
-5 minutos
+### Estimation
+5 minutes
 
-### Duración Real
-23 segundos
+### Actual duration
+1 minute
 
-# FÁCIL
+# EASY
 
 ## 1 
 
@@ -213,11 +213,11 @@ public class Program
 }
 ```
 
-### Estimación
-10 minutos
+### Estimation
+10 minutes
 
-### Duración Real
-10 minutos
+### Actual duration
+10 minutes
 
 ## 2
 
@@ -278,11 +278,11 @@ public class Program
 }
 ```
 
-### Estimación
-10 minutos
+### Estimation
+10 minutes
 
-### Duración Real
-5 minutos
+### Actual duration
+5 minutes
 
 ## 3
 
@@ -348,13 +348,13 @@ public class Program
 }
 ```
 
-### Estimación
-10 minutos
+### Estimation
+10 minutes
 
-### Duración Real
-5 minutos
+### Actual duration
+5 minutes
 
-# Medio
+# Medium
 
 ## 1 
 
@@ -406,11 +406,11 @@ public class Program {
 }
 ```
 
-### Estimación
-10 minutos
+### Estimation
+10 minutes
 
-### Duración Real
-7 minutos
+### Actual duration
+7 minutes
 
 ## 2 
 
@@ -478,11 +478,11 @@ public class Program
 }
 ```
 
-### Estimación
-10 minutos
+### Estimation
+10 minutes
 
-### Duración Real
-11 minutos
+### Actual duration
+11 minutes
 
 ## 3
 
@@ -569,13 +569,13 @@ public class Program
 }
 ```
 
-### Estimación
-7 minutos
+### Estimation
+7 minutes
 
-### Duración Real
-10 minutos
+### Actual duration
+10 minutes
 
-# Dificil
+# Hard
 
 ## 1
 
@@ -646,11 +646,11 @@ public class Program
 
 ```
 
-### Estimación
-15 minutos
+### Estimation
+15 minutes
 
-### Duración Real
-42 minutos
+### Actual duration
+42 minutes
 
 ## 2
 
@@ -713,15 +713,15 @@ public class Program
 {
     public static int[] TrackRobot(string[] instructions) {
 		int[] result = new int[2]{0,0};
-		string[] splitedInstruction;
+		string[] splitInstruction;
 		int steps;
 		string direction;
 
 		for (int i = 0; i < instructions.Length; i++)
 		{
-			splitedInstruction = instructions[i].Split(' ');
-			direction = splitedInstruction[0];
-			steps = Int32.Parse(splitedInstruction[1]);
+			splitInstruction = instructions[i].Split(' ');
+			direction = splitInstruction[0];
+			steps = Int32.Parse(splitInstruction[1]);
 
 			switch(direction)
 			{
@@ -745,11 +745,11 @@ public class Program
 }
 ```
 
-### Estimación
-20 minutos
+### Estimation
+20 minutes
 
-### Duración Real
-13 minutos
+### Actual duration
+13 minutes
 
 ## 3
 
@@ -798,9 +798,9 @@ public class Program
 	public static bool Cons(int[] arr)
 	{
 		if(arr.GroupBy(t => t).Any(t => t.Count() > 1)) return false;
-		int minimo = arr.Min();
-		int maximo = arr.Max();
-		for(int i = minimo + 1; i < maximo; i++){
+		int minimum = arr.Min();
+		int maximum = arr.Max();
+		for(int i = minimum + 1; i < maximum; i++){
 			if(!arr.Contains(i)){
 				return false;
 			}
@@ -821,21 +821,21 @@ public class Program
 	public static bool Cons(int[] arr)
 	{
 		if(arr.GroupBy(t => t).Any(t => t.Count() > 1)) return false;
-		int minimo = arr.Min();
-		int maximo = arr.Max();
+		int minimum = arr.Min();
+		int maximum = arr.Max();
 
-		return maximo - minimo == arr.Length - 1;
+		return maximum - minimum == arr.Length - 1;
 	}
 }
 ```
 
-### Estimación
-30 minutos
+### Estimation
+30 minutes
 
-### Duración Real
-30 minutos
+### Actual duration
+30 minutes
 
-# MUY Dificil
+# VERY HARD
 
 ## 1
 
@@ -1137,8 +1137,8 @@ public class Program
 }
 ```
 
-### Estimación
-40 minutos
+### Estimation
+40 minutes
 
-### Duración Real
+### Actual duration
 2 horas
